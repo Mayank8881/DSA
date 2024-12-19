@@ -1,6 +1,6 @@
 // 1752. Check if Array Is Sorted and Rotated
 public class Leet1752 {
-    public boolean check(int[] nums) {
+    public static boolean check(int[] nums) {
         int count=0;
         for(int i=0;i<nums.length-1;i++){
             if(nums[i]>nums[i+1]){
@@ -16,5 +16,9 @@ public class Leet1752 {
         else{
             return true;
         }
+    }
+    public static void main(String[] args) {
+        int arr[]={6,7,2,3,4,5};
+        System.out.println(check(arr));
     }
 }

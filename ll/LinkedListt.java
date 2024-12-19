@@ -61,11 +61,12 @@ public class LinkedListt {
         if (head == null && tail == null) {
             System.out.println("no ll");
             return -1;
-        } else if (head == tail) {
-            int data = head.data;
-            head = tail = null;
-            return data;
-        } else {
+        } // } else if (head == tail) {
+        //     int data = head.data;
+        //     head = tail = null;
+        //     return data;
+        // } 
+        else {
             int data = head.data;
             head = head.next;
             return data;
@@ -299,5 +300,4 @@ public class LinkedListt {
         }
         return slow;
     }
-
 }
